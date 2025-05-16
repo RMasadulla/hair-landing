@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Excel Minox - Beard Growth</title>
+
+    <!-- all css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      body {
+        background-color: #0e0d0d;
+        color: #f0d28d;
+        font-family: "Arial", sans-serif;
+      }
+      .customContainer {
+        width: 88%;
+        max-width: 1400px;
+        margin: auto;
+      }
+      .gold-bar {
+        background-color: #d1a350;
+      }
+      .section-title {
+        color: #d1a350;
+        background-color: #0e0d0d;
+        border-style: solid;
+        border-width: 1px 1px 0px 1px;
+        border-color: #d1a350;
+        border-radius: 0px 0px 0px 0px;
+        box-shadow: 0px -5px 10px 1px rgba(255, 190.93817934782606, 0, 0.5);
+      }
+      .section-box {
+        color: #fff;
+        background-color: #0e0d0d;
+        border-style: solid;
+        border-width: 1px 1px 1px 1px;
+        border-color: #d1a350;
+        border-radius: 3px 3px 3px 3px;
+        box-shadow: 1px 1px 11px 2px rgba(255, 190.93817934782606, 0, 0.5);
+      }
+      .btn-order-fixed {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #c58103;
+        color: black;
+        font-weight: bold;
+        text-align: center;
+        padding: 1rem;
+        z-index: 50;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Divider Pattern -->
+    <div class="w-full py-2 my-10 flex justify-center items-center">
+      <div
+        class="w-full h-4 bg-repeat-x"
+        style="
+          background-image: url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' preserveAspectRatio=\'none\' overflow=\'visible\' height=\'100%\' viewBox=\'0 0 20 16\' fill=\'none\' stroke=\'%23d1a350\' stroke-width=\'1\' stroke-linecap=\'square\' stroke-miterlimit=\'10\'%3E%3Cg transform=\'translate(-12.000000, 0)\'%3E%3Cpath d=\'M28,0L10,18\'/%3E%3Cpath d=\'M18,0L0,18\'/%3E%3Cpath d=\'M48,0L30,18\'/%3E%3Cpath d=\'M38,0L20,18\'/%3E%3C/g%3E%3C/svg%3E');
+          background-size: 20px 8.8px;
+        "
+      ></div>
+    </div>
+
+    <section class="customContainer">
+      <h2 class="text-lg md:text-xl border-b border-yellow-500 pb-2">
+        প্রোডাক্ট ডিটেইলস দেখুন
+      </h2>
+
+      <!-- Product Summary -->
+      <div class="border border-yellow-500 rounded p-4">
+        <div class="flex items-center space-x-4">
+          <img
+            src="https://excelshopbd.com/wp-content/uploads/2025/04/Minox-with-Darmaroller-300x300.png"
+            alt="Product"
+            class="w-20 h-20 object-cover rounded"
+          />
+          <div class="flex-1">
+            <p class="text-md">ডেমো প্রোডাক্ট</p>
+            <span class="text-sm">× 1</span>
+          </div>
+          <div class="text-yellow-400 font-semibold">৳ 1,000</div>
+        </div>
+      </div>
+
+      <!-- Form Start -->
+      <form action="#" method="POST" class="space-y-6">
+        <h3 class="text-lg border-b border-yellow-500 pb-2">
+          অর্ডার ফর্মটি পূরণ করুন
+        </h3>
+
+        <div>
+          <label class="block mb-1">নাম *</label>
+          <input
+            type="text"
+            required
+            placeholder="আপনার নাম লিখুন"
+            class="w-full p-2 rounded border border-yellow-500 bg-black text-white"
+          />
+        </div>
+
+        <div>
+          <label class="block mb-1">মোবাইল *</label>
+          <input
+            type="text"
+            required
+            placeholder="017XXXXXXXX"
+            class="w-full p-2 rounded border border-yellow-500 bg-black text-white"
+          />
+        </div>
+
+        <div>
+          <label class="block mb-1">সম্পূর্ণ ঠিকানা *</label>
+          <input
+            type="text"
+            required
+            placeholder="গ্রাম ইউনিয়ন উপজেলা জেলা..."
+            class="w-full p-2 rounded border border-yellow-500 bg-black text-white"
+          />
+        </div>
+
+        <div>
+          <label class="block mb-1">Country / Region *</label>
+          <input
+            type="text"
+            readonly
+            value="Bangladesh"
+            class="w-full p-2 rounded border border-yellow-500 bg-black text-white"
+          />
+        </div>
+
+        <div>
+          <label class="block mb-1">Order notes (optional)</label>
+          <textarea
+            rows="3"
+            placeholder="ডেলিভারি সম্পর্কে বিশেষ নোট লিখুন"
+            class="w-full p-2 rounded border border-yellow-500 bg-black text-white"
+          ></textarea>
+        </div>
+
+        <!-- Shipping -->
+        <div class="mt-6">
+          <h3 class="text-lg border-b border-yellow-500 pb-2">Shipping</h3>
+          <div class="flex justify-between mt-2">
+            <span>ঢাকা বাংলাদেশ:</span>
+            <span class="text-yellow-400">৳ 60</span>
+          </div>
+        </div>
+
+        <!-- Order Summary -->
+        <div class="mt-6 border-t border-yellow-500 pt-4">
+          <h3 class="text-lg font-semibold mb-4">
+            কি অর্ডার করেছেন দেখুন নিচে
+          </h3>
+          <div
+            class="flex justify-between text-sm border-b border-dashed border-gray-500 pb-2"
+          >
+            <div>
+              <img
+                src="https://excelshopbd.com/wp-content/uploads/2025/04/Minox-with-Darmaroller-300x300.png"
+                alt="ডেমো প্রোডাক্ট"
+              />
+              ডেমো প্রোডাক্ট
+            </div>
+            <div>× 1</div>
+            <div>৳ 1,000</div>
+          </div>
+          <div class="flex justify-between mt-2">
+            <span>Subtotal</span>
+            <span>৳ 1,000</span>
+          </div>
+          <div class="flex justify-between font-bold mt-1 text-yellow-400">
+            <span>Total</span>
+            <span>৳ 1,060</span>
+          </div>
+        </div>
+
+        <!-- Payment Info -->
+        <div class="bg-yellow-800 text-black p-4 mt-6 rounded">
+          ক্যাশ অন ডেলিভারি<br />
+          <button
+            type="submit"
+            class="mt-4 bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2 px-6 rounded shadow-lg transition-all w-full"
+          >
+            অর্ডার সম্পূর্ণ করুন ৳ 1,060
+          </button>
+        </div>
+      </form>
+    </section>
+    <!-- Divider Pattern  -->
+    <div class="w-full py-2 my-4 flex justify-center items-center">
+      <div
+        class="w-full h-6 bg-repeat-x"
+        style="
+          background-image: url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' preserveAspectRatio=\'none\' overflow=\'visible\' height=\'100%\' viewBox=\'0 0 20 16\' fill=\'none\' stroke=\'%23d1a350\' stroke-width=\'1\' stroke-linecap=\'square\' stroke-miterlimit=\'10\'%3E%3Cg transform=\'translate(-12.000000, 0)\'%3E%3Cpath d=\'M28,0L10,18\'/%3E%3Cpath d=\'M18,0L0,18\'/%3E%3Cpath d=\'M48,0L30,18\'/%3E%3Cpath d=\'M38,0L20,18\'/%3E%3C/g%3E%3C/svg%3E');
+          background-size: 20px 20px;
+        "
+      ></div>
+    </div>
+
+    <footer class="w-full mt-10 text-sm">
+      <div style="background: #252523">
+        <div
+          class="customContainer flex flex-col md:flex-row items-center gap-10 md:gap-20 lg:gap-40 justify-center py-4"
+        >
+          <div>
+            <h3 style="color: #d1a350" class="font-bold text-2xl mb-2">
+              CONTACT US
+            </h3>
+            <ul class="flex flex-col gap-2">
+              <li>
+                <i class="fa-solid fa-location-dot text-white mr-2"></i>
+                Dhaka, BD
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-solid fa-phone text-white mr-2"></i>+880
+                  179600000</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-solid fa-envelope text-white mr-2"></i
+                  >admin@sellbd.com</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 style="color: #d1a350" class="font-bold text-2xl mb-2">
+              FOLLOW US
+            </h3>
+            <div class="flex justify-center gap-4">
+              <a href="#" target="_blank" title="Facebook">
+                <i class="fa-brands fa-facebook text-2xl text-white"></i>
+              </a>
+              <a href="#" target="_blank" title="Messenger">
+                <i
+                  class="fa-brands fa-facebook-messenger text-2xl text-white"
+                ></i>
+              </a>
+              <a href="#" target="_blank" title="Whatsapp">
+                <i class="fa-brands fa-whatsapp text-2xl text-white"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-white text-center py-3">
+        SELL BD &copy; <span id="year"></span> DEVELOPED BY
+        <a
+          href="https://rm-asadulla-portfolio.web.app/"
+          target="_blank"
+          class="text-blue-200"
+          >RM ASADULLA
+        </a>
+      </p>
+    </footer>
+
+    <!-- all script -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
+      integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
